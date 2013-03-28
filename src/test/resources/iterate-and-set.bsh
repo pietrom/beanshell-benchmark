@@ -1,0 +1,11 @@
+import java.util.Date;
+import java.util.List;
+import org.amicofragile.benchmarks.beanshell.Item;
+
+now = new Date();
+
+for(Item item : items) {
+	if(item.getNumber() % 3 == 0) {
+		item.setModificationDate(now);
+	}
+}
